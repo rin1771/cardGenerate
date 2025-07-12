@@ -52,8 +52,8 @@ if (isset($_GET['id']) && isset($_GET['file'])) {
             $name_kh = htmlspecialchars($employee[2]);
             $name_en = htmlspecialchars($employee[3]);
             $position = htmlspecialchars($employee[4]);
-            $star_date = date('d-M-y', strtotime(htmlspecialchars($employee[5])));
-            $expired_date = date('d-M-y', strtotime(htmlspecialchars($employee[6])));
+            $star_date = htmlspecialchars($employee[5]);
+            $expired_date = htmlspecialchars($employee[6]);
 
             // Initialize image base64 string
             $imageBase64 = '';
@@ -106,14 +106,15 @@ if (isset($_GET['id']) && isset($_GET['file'])) {
                         <div class='details'>
                             <div class='content'>
                                 <p>ID No</p>
-                                <p>Starting Date</p>
-                                <p>Expired Date</p>
-                                
+                                <p> : " . $id . "</p>
                             </div>
                             <div class='content'>
-                                <p> <span>:</span> " . $id . "</p>
-                                <p> <span>:</span> " . $star_date . "</p>
-                                <p> <span>:</span> " . $expired_date . "</p>
+                                <p>Starting Date</p>
+                                <p> : " . $star_date . "</p>
+                            </div>
+                            <div class='content'>
+                                <p>Expired Date</p>
+                                <p> : " . $expired_date . "</p>
                             </div>
                         </div>
                     </div>

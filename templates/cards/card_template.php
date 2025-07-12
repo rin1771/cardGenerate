@@ -1,9 +1,7 @@
 <?php
 
-function generateEmployeeCard($id, $name_kh, $name_en, $position, $star_date, $expired_date, $uploadedFileName, $imageBase64) {
-    // Convert dates to dd-mm-yy format
-    $star_date = date('d-M-y', strtotime($star_date));
-    $expired_date = date('d-M-y', strtotime($expired_date));
+function generateEmployeeCard($id, $name_kh, $name_en, $position, $star_date, $expired_date, $uploadedFileName, $imageBase64)
+{
     // Generate unique ids for each card using the employee ID
     return '
         <div class="card-holder" id="card-holder-' . $id . '">
@@ -22,14 +20,15 @@ function generateEmployeeCard($id, $name_kh, $name_en, $position, $star_date, $e
                 <div class="details">
                     <div class="content">
                         <p>ID No</p>
-                        <p>Starting Date</p>
-                        <p>Expired Date</p>
-                        
+                        <p> : ' . $id . '</p>
                     </div>
                     <div class="content">
-                        <p> <span>:</span> ' . $id . '</p>
-                        <p> <span>:</span> ' . $star_date . '</p>
-                        <p> <span>:</span> ' . $expired_date . '</p>
+                        <p>Starting Date</p>
+                        <p> : ' . $star_date . '</p>
+                    </div>
+                    <div class="content">
+                        <p>Expired Date</p>
+                        <p> : ' . $expired_date . '</p>
                     </div>
                 </div>
                 <div class="hover-buttons">

@@ -44,30 +44,30 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 7px;
+    margin-bottom: 15px;
 }
 
 .card-detail {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* margin-bottom: 2px; */
 }
 
 .details {
+    text-align: center;
     margin-top: 15px;
-    display: flex;
     color: white;
-    width: 95px;
-    justify-content: space-between;
-}
-
-span {
-    margin-right: 2px;
 }
 
 .content {
+    display: flex;
+    justify-content: space-between;
     font-size: 8px;
     margin-top: -12px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .name_kh {
@@ -75,6 +75,7 @@ span {
     font-size: 15px;
     font-family: "Moul", serif;
     font-weight: 600;
+    font-style: normal;
     text-align: center;
     color: #2E297C;
     margin-bottom: 1px;
@@ -90,17 +91,13 @@ span {
     margin-bottom: 5px;
 }
 
-.content p {
-    font-family: "Varela Round", sans-serif;
-    font-weight: 600;
-    font-style: n
-}
-
 .position {
     text-align: center;
-    font-size: 11px;
+    font-size: 10px;
     color: #2E297C;
-    font-family: Khmer OS Battambang;
+    font-family: "Battambang", system-ui;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .upload-container {
@@ -149,10 +146,8 @@ span {
     height: 99px;
     border-radius: 9px;
     position: relative;
-    margin-bottom: 16px;
-    margin-left: 1px;
+    margin-bottom: 17px;
 }
-
 
 #printForm {
     text-align: center;
