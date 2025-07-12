@@ -1,0 +1,245 @@
+/* css/style.css */
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Flex container for employee cards */
+.employee-cards {
+    margin-top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+}
+
+.card-holder {
+    height: 320px;
+    width: 200px;
+    background-image: url(../assets/images/bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.card-buva-holder {
+    height: 320px;
+    width: 200px;
+    background-image: url(../assets/images/bg1.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.card-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details {
+    margin-top: 15px;
+    display: flex;
+    color: white;
+    width: 95px;
+    justify-content: space-between;
+}
+
+span {
+    margin-right: 2px;
+}
+
+.content {
+    font-size: 8px;
+    margin-top: -12px;
+}
+
+.name_kh {
+    margin: 0;
+    font-size: 15px;
+    font-family: "Moul", serif;
+    font-weight: 600;
+    text-align: center;
+    color: #2E297C;
+    margin-bottom: 1px;
+}
+
+.name_en {
+    text-align: center;
+    font-size: 10px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.content p {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 600;
+    font-style: n
+}
+
+.position {
+    text-align: center;
+    font-size: 11px;
+    color: #2E297C;
+    font-family: Khmer OS Battambang;
+}
+
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.upload-btn {
+    width: 80px;
+    height: 87px;
+    border: 2px dashed #6f2c91;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.upload-btn input[type='file'] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 24px;
+    color: #6f2c91;
+}
+
+.upload-text {
+    font-size: 14px;
+    color: #6f2c91;
+}
+
+#imagePreview,
+.image-preview,
+#image_simle {
+    width: 90px;
+    height: 99px;
+    border-radius: 9px;
+    position: relative;
+    margin-bottom: 16px;
+    margin-left: 1px;
+}
+
+
+#printForm {
+    text-align: center;
+    /* Center the form */
+    margin-top: 20px;
+    /* Space above the form */
+}
+
+#printForm input[type='button'] {
+    background-color: #DE5D0A;
+    /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    /* Increased padding for better size */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Larger font */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transitions */
+}
+
+#printForm input[type='button']:active {
+    transform: translateY(0);
+    /* Reset lift effect on click */
+}
+
+.card-holder {
+    position: relative;
+    /* Ensure positioned for absolute children */
+    overflow: hidden;
+    /* Clip any overflowing content */
+}
+
+.card-buva-holder {
+    position: relative;
+    /* Ensure positioned for absolute children */
+    overflow: hidden;
+    /* Clip any overflowing content */
+}
+
+.upload-container {
+    transition: filter 0.3s;
+    /* Smooth filter transition */
+}
+
+.card-holder:hover .upload-container {
+    filter: blur(5px);
+    /* Apply blur effect */
+}
+
+.card-buva-holder:hover .upload-container {
+    filter: blur(5px);
+    /* Apply blur effect */
+}
+
+.hover-buttons {
+    display: none;
+    /* Hide buttons by default */
+    position: absolute;
+    bottom: 10px;
+    /* Adjust as needed */
+    left: 10px;
+    /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent background */
+    padding: 5px;
+    border-radius: 5px;
+    width: 170px;
+    /* Adjust as needed */
+}
+
+.card-holder:hover .hover-buttons {
+    display: block;
+    /* Show buttons on hover */
+}
+
+.card-buva-holder:hover .hover-buttons {
+    display: block;
+    /* Show buttons on hover */
+}
+
+.change-image,
+.show-price {
+    margin: 2px;
+    /* Spacing between buttons */
+}
